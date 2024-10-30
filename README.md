@@ -6,7 +6,6 @@
 - [Technologies](#technologies)
 - [Getting Started](#getting-started)
 - [License](#license)
-- [MyLinks](#my-links)
 
 ## Overview
 Infrastructure as Code (IaC) with Terraform, combined with distributed data processing on Databricks, 
