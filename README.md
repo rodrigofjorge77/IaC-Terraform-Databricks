@@ -30,13 +30,12 @@ for downstream analysis or reporting.
 
 #### The project is designed with the following components:
 
-- **Data Source**: We use `randomuser.me` API to generate random user data for our pipeline.
-- **Apache Airflow**: Responsible for orchestrating the pipeline and storing fetched data in a PostgreSQL database.
-- **Apache Kafka and Zookeeper**: Used for streaming data from PostgreSQL to the processing engine.
-- **Control Center and Schema Registry**: Helps in monitoring and schema management of our Kafka streams.
-- **Apache Spark**: For data processing with its master and worker nodes.
-- **Cassandra**: Where the processed data will be stored.
-- **Doker**: For Containerizing our entire pipeline.
+- **Data Source**: File nike_dt_s3.csv got from https://www.kaggle.com/
+- **Terraform**: Used for creating IaC in AWS and Databricks
+- **AWS S3**: Used for storage files
+- **Databricks**: Responsible for distributed processing
+- **PySpark**: For data processing with its master and worker nodes.
+- **Docker**: For Containerizing Terraforms environment
 
 #### We can monitor these messages being sent to Kafka topic using Control Center.
 **![Control Center](pics/controlcenter.gif)**
