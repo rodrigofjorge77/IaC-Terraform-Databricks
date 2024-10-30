@@ -9,14 +9,20 @@
 - [MyLinks](#my-links)
 
 ## Overview
-In today's fast-paced, data-driven world, real-time data streaming is crucial for handling large volumes of
-data efficiently and making time-sensitive decisions. Whether it's live updates, monitoring system events, 
-or analyzing clickstreams, businesses rely on the ability to collect, process, and store data as it flows in real time.
+Infrastructure as Code (IaC) with Terraform, combined with distributed data processing on Databricks, 
+offers a scalable, efficient, and automated approach to manage and analyze data. By leveraging Terraform, 
+infrastructure deployments become repeatable and consistent, minimizing the risks of human error and 
+ensuring faster, reliable configurations. 
+Integrating this with Databricks’ powerful processing capabilities allows for robust data transformations 
+and analyses at scale, particularly beneficial for handling large datasets and optimizing workflows in cloud environments.
 
-To explore this further, I developed an end-to-end data engineering pipeline that automates
-the data ingestion, processing, and storage lifecycle using a scalable, modern tech stack. 
-This project leverages a variety of technologies to streamline data workflows, making it ideal for 
-both real-time and batch processing use cases.
+In this architecture, raw sales data is initially uploaded by users to an AWS S3 bucket, providing a centralized 
+location for storage. From here, a PySpark script is executed on a Databricks cluster hosted in the AWS cloud. T
+his script performs several critical processing steps: first, it eliminates duplicate records to ensure data integrity. 
+It then fills in any empty columns to handle missing values. Following data cleaning, the script performs aggregations 
+by various dimensions, such as product, region, and sales method, creating valuable insights from the data. 
+Finally, the processed results are saved back into another S3 bucket, where they are readily accessible 
+for downstream analysis or reporting.
 
 ## System Architecture
 
