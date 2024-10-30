@@ -44,29 +44,20 @@ for downstream analysis or reporting.
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/SidiahmedHABIB/e2e-data-engineering.git
+    git clone https://github.com/rodrigofjorge77/IaC-Databricks.git
     ```
 
 2. Navigate to the project directory:
     ```bash
-    cd e2e-data-engineering
+    cd Terraform
     ```
-3. Install packages:
+3. Run Docker Compose to spin up the services:
     ```bash
-    pip install airflow
-    pip install kafka-python
-    pip install spark pyspark
-    pip install cassandra-driver
-    ```
-4. Run Docker Compose to spin up the services:
-    ```bash
-    docker-compose up
+    docker build -t databricks-terraform-image .
+    docker run -dit --name databricks -v ./IaC:/iac databricks-terraform-image /bin/bash
     ```
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-
-## My Links
-[![FaceBook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/habib.sidiahmed.5)   [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sidi-ahmed-habib-18163220a/)
