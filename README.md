@@ -1,4 +1,4 @@
-# Realtime Data Streaming | End-to-End Data Engineering Project
+# Iac Terrafrom and Databricks
 
 ## Table of Contents
 - [Overview](#overview)
@@ -20,7 +20,7 @@ both real-time and batch processing use cases.
 
 ## System Architecture
 
-![System Architecture](pics/architecture.gif)
+![System Architecture](https://github.com/rodrigofjorge77/IaC-Databricks/blob/main/assets/architecture.png)
 
 #### The project is designed with the following components:
 
