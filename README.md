@@ -31,26 +31,14 @@ for downstream analysis or reporting.
 #### The project is designed with the following components:
 
 - **Data Source**: File nike_dt_s3.csv got from https://www.kaggle.com/
-- **Terraform**: Used for creating IaC in AWS and Databricks
 - **AWS S3**: Used for storage files
 - **Databricks**: Responsible for distributed processing
-- **PySpark**: For data processing with its master and worker nodes.
-- **Docker**: For Containerizing Terraforms environment
-
-#### We can monitor these messages being sent to Kafka topic using Control Center.
-**![Control Center](pics/controlcenter.gif)**
-
 
 ## Technologies
 
-- Apache Airflow
-- Python
-- Apache Kafka
-- Apache Zookeeper
-- Apache Spark
-- Cassandra
-- PostgreSQL
 - Docker
+- Terraform
+- PySpark
 
 ## Getting Started
 
