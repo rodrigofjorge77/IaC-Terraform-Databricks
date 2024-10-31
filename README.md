@@ -1,4 +1,4 @@
-# Iac Terrafrom and Databricks
+# Iac Terraform and Databricks
 
 ## Table of Contents
 - [Overview](#overview)
