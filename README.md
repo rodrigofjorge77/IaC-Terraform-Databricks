@@ -25,7 +25,7 @@ for downstream analysis or reporting.
 
 ## System Architecture
 
-![System Architecture](https://github.com/rodrigofjorge77/IaC-Databricks/blob/main/assets/architecture.png)
+![System Architecture](https://github.com/rodrigofjorge77/IaC-Databricks/blob/main/assets/DatabricksArchitecture.gif)
 
 #### The project is designed with the following components:
 
