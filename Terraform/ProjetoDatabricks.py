@@ -5,7 +5,7 @@ from pyspark.sql import DataFrame
 
 def file_Export_to_S3(df: DataFrame, texto: str) -> None:
     
-    bucket_path = "s3a://rodrigojorge-projeto202410-pispark/output/" + texto
+    bucket_path = "s3a://rodrigojorge-projeto202410-pyspark/output/" + texto
     
     # Carregar o DataFrame para o S3 no formato CSV
     df.write \
