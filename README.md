@@ -50,7 +50,7 @@ for downstream analysis or reporting.
     ```bash
     cd Terraform
     ```
-3. Run Docker Compose to spin up the services:
+3. Run Docker Compose
     ```bash
     docker build -t databricks-terraform-image .
     docker run -dit --name databricks -v ./IaC:/iac databricks-terraform-image /bin/bash
